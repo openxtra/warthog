@@ -1,0 +1,41 @@
+<?php
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/*
+ * Modified to fix an incorrect schema definition for price.
+ * See: https://github.com/magento/magento2/pull/8132
+ * NOTE: also included the itemCondition property that is not part of the above bug fix. Therefore the 
+ * previous advice to remove this file when the above fix is included in a full release no longer 
+ * applies here.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+
+<?php /** @var \Magento\Framework\Pricing\Render\Amount $block */ ?>
+
+<span class="price-container <?php /* @escapeNotVerified */ echo $block->getAdjustmentCssClasses() ?>"
+      <?php echo $block->getSchema() ? ' itemprop="offers" itemscope itemtype="http://schema.org/Offer"' : '' ?>>
+    <?php if ($block->getDisplayLabel()): ?>
+       <span class="price-label"><?php /* @escapeNotVerified */ echo $block->getDisplayLabel(); ?></span>
+    <?php endif; ?>
+    <span <?php if ($block->getPriceId()): ?> id="<?php /* @escapeNotVerified */ echo $block->getPriceId() ?>"<?php endif;?>
+       <?php echo($block->getPriceDisplayLabel()) ? 'data-label="' . $block->getPriceDisplayLabel() . $block->getPriceDisplayInclExclTaxes() . '"' : '' ?>
+                    data-price-amount="<?php /* @escapeNotVerified */ echo $block->getDisplayValue(); ?>"
+                    data-price-type="<?php /* @escapeNotVerified */ echo $block->getPriceType(); ?>"
+                    class="price-wrapper <?php /* @escapeNotVerified */ echo $block->getPriceWrapperCss(); ?>">
+       <?php /* @escapeNotVerified */ echo $block->formatCurrency($block->getDisplayValue(), (bool)$block->getIncludeContainer()) ?>
+    </span>
+    <?php if ($block->hasAdjustmentsHtml()): ?>
+           <?php echo $block->getAdjustmentsHtml() ?>
+    <?php endif; ?>
+    <?php if ($block->getSchema()): ?>
+           <meta itemprop="price" content="<?php /* @escapeNotVerified */ echo $block->getDisplayValue(); ?>" />
+           <meta itemprop="priceCurrency" content="<?php /* @escapeNotVerified */ echo $block->getDisplayCurrencyCode()?>" />
+	   <meta itemprop="itemCondition" content="http://schema.org/NewCondition" />
+    <?php endif; ?>
+</span>

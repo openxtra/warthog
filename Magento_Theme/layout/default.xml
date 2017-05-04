@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+  <body>
+    <!-- Company Logo configuration --> 
+    <referenceBlock name="logo">
+      <arguments>
+	<argument name="logo_file" xsi:type="string">images/logo.png</argument>
+	<argument name="logo_img_width" xsi:type="number">224</argument>
+	<argument name="logo_img_height" xsi:type="number">50</argument>
+      </arguments>
+    </referenceBlock>
+    
+    <!-- Secondary navigation menu configuration -->
+    <referenceBlock name="top.links">
+      <block class="Magento\Framework\View\Element\Html\Link"
+             name="faq.link"
+             after="support.link">
+        <arguments>
+          <argument name="label" xsi:type="string" translate="false">FAQ</argument>
+          <argument name="path" xsi:type="string" translate="false">faq</argument>
+        </arguments>
+      </block>
+      <block class="Magento\Framework\View\Element\Html\Link"
+             name="support.link"
+             after="contactus.link">
+        <arguments>
+          <argument name="label" xsi:type="string" translate="false">Support</argument>
+          <argument name="path" xsi:type="string" translate="false">support</argument>
+        </arguments>
+      </block>
+      <block class="Magento\Framework\View\Element\Html\Link"
+             name="contactus.link"
+             after="aboutus.link">
+        <arguments>
+          <argument name="label" xsi:type="string" translate="false">Contact Us</argument>
+          <argument name="path" xsi:type="string" translate="false">contact-us</argument>
+        </arguments>
+      </block>
+      <block class="Magento\Framework\View\Element\Html\Link"
+             name="aboutus.link"
+             before="my-account-link">
+        <arguments>
+          <argument name="label" xsi:type="string" translate="false">About Us</argument>
+          <argument name="path" xsi:type="string" translate="false">about-us</argument>
+        </arguments>
+      </block>
+    </referenceBlock>
+
+    <referenceContainer name="header-wrapper">
+      <block class="Magento\Framework\View\Element\Html\Link"
+	     name="phone.link"
+	     after="logo"
+	     template="Magento_Theme::html/phonelink.phtml" />
+    </referenceContainer>
+
+    <!-- Replace the copyright template -->
+    <referenceBlock name="copyright" template="html/copyright.phtml" />
+
+    <!-- Remove all default footer links -->
+    <referenceBlock name="footer_links" remove="true"/>
+    <!-- Remove bug report link -->
+    <referenceBlock name="report.bugs" remove="true" />
+    <!-- Remove newsletter signup from footer -->
+    <referenceBlock name="form.subscribe" remove="true" />
+  </body>
+</page>
