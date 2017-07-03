@@ -26,7 +26,7 @@
 	$storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
 	$base_url = $storeManager->getStore()->getBaseUrl(); ?>
     	<li class="level0 ui-menu-item level-top">
-	    <a class="level-top ui-corner-all" role="menuitem" href="<?php echo $base_url; ?>"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+	    <a class="level-top ui-corner-all" role="menuitem" href="<?php echo $base_url; ?>">Home</a>
 	</li>
         <?php /* @escapeNotVerified */ echo $_menu; ?>
         <?php /* @escapeNotVerified */ echo $block->getChildHtml(); ?>
