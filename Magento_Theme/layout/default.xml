@@ -18,7 +18,7 @@
              after="support.link">
         <arguments>
           <argument name="label" xsi:type="string" translate="false">FAQ</argument>
-          <argument name="path" xsi:type="string" translate="false">faq</argument>
+          <argument name="path" xsi:type="string" translate="false">loffaq/index/index</argument>
         </arguments>
       </block>
       <block class="Magento\Framework\View\Element\Html\Link"
