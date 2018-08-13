@@ -5,6 +5,8 @@
  * See LICENSE for license terms.
  */
 
+@openxtra-color:  #FF7900;
+
 /* Request a quote sidebar block. */
 
 a.request-quote {
@@ -228,8 +230,16 @@ img.kb-diagram {
     color: #3B3B3B;
 }
 
-// Messages
+body {
+    border-top: 3px solid @openxtra-color;
+}
 
-.information-message {
-    .lib-message-icon-lateral(info, left);
+.header.panel .header.links li {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.header.panel .header.links li a {
+    color: @openxtra-color;
+    text-decoration: none;
 }
