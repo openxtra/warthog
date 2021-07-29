@@ -20,6 +20,8 @@
         </policy>
         <policy id="connect-src">
             <values>
+                <value id="google-analytics" type="host">*.google-analytics.com</value>
+                <value id="doubleclick" type="host">*.doubleclick.net</value>
                 <value id="chat" type="host">chat.openxtra.co.uk</value>
             </values>
         </policy>
