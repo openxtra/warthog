@@ -13,6 +13,7 @@
             <policies>
                 <storefront>
                     <frame-ancestors>
+                        <policy_id>frame-ancestors</policy_id>
                         <inline>0</inline>
                     </frame-ancestors>
                 </storefront>
