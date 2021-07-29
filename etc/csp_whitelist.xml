@@ -15,10 +15,12 @@
         </policy>
         <policy id="img-src">
             <values>
+                <value id="chat" type="host">chat.openxtra.co.uk</value>
             </values>
         </policy>
         <policy id="connect-src">
             <values>
+                <value id="chat" type="host">chat.openxtra.co.uk</value>
             </values>
         </policy>
         <policy id="font-src">
