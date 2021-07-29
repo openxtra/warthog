@@ -26,5 +26,10 @@
                 <value id="chat" type="host">chat.openxtra.co.uk</value>
             </values>
         </policy>
+        <policy id="frame-src">
+            <values>
+                <value id="chat" type="host">chat.openxtra.co.uk</value>
+            </values>
+        </policy>
     </policies>
 </csp_whitelist>
