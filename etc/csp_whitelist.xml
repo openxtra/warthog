@@ -16,6 +16,7 @@
         <policy id="img-src">
             <values>
                 <value id="chat" type="host">chat.openxtra.co.uk</value>
+                <value id="securitymetrics" type="host">www.securitymetrics.com</value>
             </values>
         </policy>
         <policy id="connect-src">
