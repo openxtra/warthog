@@ -5,17 +5,10 @@
             <values>
                 <value id="google-analytics" type="host">*.google-analytics.com</value>
                 <value id="doubleclick" type="host">*.doubleclick.net</value>
-                <value id="chat" type="host">chat.openxtra.co.uk</value>
-            </values>
-        </policy>
-        <policy id="style-src">
-            <values>
-                <value id="chat" type="host">chat.openxtra.co.uk</value>
             </values>
         </policy>
         <policy id="img-src">
             <values>
-                <value id="chat" type="host">chat.openxtra.co.uk</value>
                 <value id="securitymetrics" type="host">www.securitymetrics.com</value>
             </values>
         </policy>
@@ -23,17 +16,6 @@
             <values>
                 <value id="google-analytics" type="host">*.google-analytics.com</value>
                 <value id="doubleclick" type="host">*.doubleclick.net</value>
-                <value id="chat" type="host">chat.openxtra.co.uk</value>
-            </values>
-        </policy>
-        <policy id="font-src">
-            <values>
-                <value id="chat" type="host">chat.openxtra.co.uk</value>
-            </values>
-        </policy>
-        <policy id="frame-src">
-            <values>
-                <value id="chat" type="host">chat.openxtra.co.uk</value>
             </values>
         </policy>
     </policies>
