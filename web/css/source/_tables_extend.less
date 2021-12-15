@@ -37,7 +37,7 @@
 .product-quick-info-external-sensors-supported {
     .lib-table();
     .lib-table-bordered(
-	@_table_type: light
+    	@_table_type: light
 	);
     .lib-table-striped();
     .lib-table-overflow();
@@ -114,9 +114,28 @@
 .product-room-alert-comparison .fa-check,
 .product-supported-sensors .fa-check,
 .product-gotomydevicescom-comparison .fa-check,
+.product-gotomydevicescom-comparison .fa-check-circle,
 .product-quick-info-external-sensors-supported .fa-check {
     color: green;
     font-size: 20px;
+}
+
+.product-gotomydevicescom-comparison table tr.section-header td {
+    text-align: left !important;
+    padding-left: 0 !important;
+    padding-top: 15px !important;
+}
+
+.product-gotomydevicescom-comparison td.product-label {
+    text-align: left;
+}
+
+.product-gotomydevicescom-comparison td {
+    text-align: center;
+}
+
+.product-gotomydevicescom-comparison tr.stripe td {
+    background-color: #f9f9f9;
 }
 
 col.highlight {
@@ -161,4 +180,3 @@ table.attribute-tbl tr.odd td {
     border-bottom-color: #DDDDDD;
     background-color: #F7F8F9;
 }
-
