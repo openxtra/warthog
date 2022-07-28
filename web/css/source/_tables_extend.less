@@ -14,12 +14,16 @@
 .product-room-alert-comparison {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-room-alert-comparison {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
@@ -28,12 +32,15 @@
     .lib-table();
     .lib-table-bordered();
     .lib-table-striped();
-    .lib-table-overflow();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-supported-sensors {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
@@ -42,13 +49,12 @@
 .product-gotomydevicescom-comparison {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-gotomydevicesdotcom-comparison,
     .product-gotomydevicescom-comparison {
-        .lib-table-overflow();
+        .lib-table-responsive();
     }
 }
 
@@ -59,108 +65,143 @@
     	@_table_type: light
 	);
     .lib-table-striped();
-    .lib-table-overflow();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-quick-info-external-sensors-supported {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
 .product-securityprobe-expansion {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-securityprobe-expansion {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
 .product-sensor-specification {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-sensor-specification {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
 .product-model-variants {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-model-variants {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
 .product-sensor-variants {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-sensor-variants {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
 .brand-obsolete {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .brand-obsolete {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
 .product-comparison {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-comparison {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
 .product-sensor-comparison {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .product-sensor-comparison {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
 .snmp-details {
     .lib-table();
     .lib-table-bordered();
-    .lib-table-overflow();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
     .snmp-details {
-        .lib-table-overflow();
+        .lib-table-responsive(
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
+        );
     }
 }
 
