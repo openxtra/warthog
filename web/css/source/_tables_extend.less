@@ -46,6 +46,8 @@
 .product-gotomydevicescom-comparison {
     .lib-table();
     .lib-table-bordered();
+    .lib-table-striped();
+    .lib-table-hover();
 }
 
 @media only screen and (max-width: @screen__m) {
@@ -53,6 +55,8 @@
     .product-gotomydevicescom-comparison {
         .lib-table-responsive(
             @_table-th-background-color-responsive: #ffc,
+            @_reset-table-striped: true,
+            @_reset-table-hover: true
         );
     }
 }
